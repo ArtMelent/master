@@ -1,0 +1,15 @@
+<div class="sw-container">
+    <div class="stopwatch">
+      <span>{{minutes < 10 ? '0' + minutes : minutes}} : </span>
+      <span>{{seconds < 10 ? '0' + seconds : seconds}}</span>
+    </div>
+    <div class="btn-container">
+      <button class="btn-start-stop ripple"  id="run" >
+        <i *ngIf="!running" class="fas fa-play"></i>
+        <i *ngIf="running" class="fas fa-pause"></i>
+      </button>
+      <button class="ripple" id="reset">
+        <i class="fas fa-redo-alt"></i>
+      </button>
+    </div>
+  </div>

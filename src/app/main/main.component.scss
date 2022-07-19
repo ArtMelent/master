@@ -1,0 +1,53 @@
+:host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sw-container{
+    background: linear-gradient(to right, rgb(40, 39, 39), rgb(19, 19, 19));
+    padding: 15px 10px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    width: 300px;
+    .stopwatch{
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+    .btn-container{
+        button{
+            background-color: #fff;
+            border: none;
+            outline: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            color: rgb(26, 26, 26);
+        }
+        i{
+            display: block;
+        }
+        .btn-start-stop{
+            margin-right: 10px;
+            .fa-play{
+                padding-left: 2px;
+            }
+        }
+        .ripple{
+            background-position: center;
+            transition: opacity 0.6s;
+        }
+        .ripple:hover{
+            opacity: .8;
+        }
+        .ripple:active{
+            opacity: 0.6;
+            background-size: 100%;
+            transition: opacity 0s;
+        }
+    }
+}
